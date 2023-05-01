@@ -17,7 +17,7 @@ body, html {
   }
 
   section {
-    height: 650px;
+    height: 100%;
     display: flex;
     justify-content: left;
     padding: 0 40px;
@@ -72,7 +72,6 @@ body, html {
 /*Second practice css*/
 .container-second{
     top: 0;
-    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +81,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin-left: 40%;
 }
 .square1 {
 width: 70px;
@@ -156,4 +155,63 @@ transform: matrix(0.7, -0.5, 0.5, 0.4, 0.5, 0.7);
 transition: 1s;
 }
 
- 
+
+
+
+ /*third practice css*/
+ .container-third{
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50%;
+}
+ label {
+    margin:200px;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    display: block;
+    background: url(https://64.media.tumblr.com/559f6d708802cf218cbc7cfa03ce0036/a869f36ae7dc6120-b7/s540x810/0cfbaf00a166dc40d8488190744f8daad51a669c.gifv) no-repeat;
+    border-radius: 200px;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.671), 
+    inset 5px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.8s;
+ }
+
+ label:after {
+    content: "";
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(180deg,#80d5015e, #ebbc2267);
+    border-radius: 180px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.671);
+    transition: 0.8s;
+ }
+
+ input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+ }
+
+ input:checked + label {
+    background: url(https://64.media.tumblr.com/d553b5ca4d4f2947b52e50c7d2fdad0d/af809c7927f7d5f2-73/s540x810/549d22afdfd860a13c050cb2f825b6245c3bbaff.gifv) no-repeat;
+}
+
+ input:checked + label:after {
+    left: 490px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #d3eff97d, #1a375d6b);
+ }
+ label, label:after {
+   transition: 0.8s;
+ }
+
+ label:active:after{
+    width: 260px;
+ }
