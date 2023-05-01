@@ -70,6 +70,9 @@ body, html {
     }
  
 /*Second practice css*/
+.sec2 {
+   background: 917FB3;
+}
 .container-second{
     top: 0;
     display: flex;
@@ -159,6 +162,9 @@ transition: 1s;
 
 
  /*third practice css*/
+ .sec3 {
+   background: #182747;
+}
  .container-third{
     top: 0;
     display: flex;
@@ -187,7 +193,7 @@ transition: 1s;
     position: absolute;
     top: 10px;
     left: 10px;
-    background: linear-gradient(180deg,#80d5015e, #ebbc2267);
+    background: linear-gradient(180deg,#d1dadc6e, #0040b869);
     border-radius: 180px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.671);
     transition: 0.8s;
